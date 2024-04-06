@@ -49,6 +49,7 @@ public class UserServiceImpl implements UserService{
 		User followedUser = findUserById(followedUserId);
 		User followingUser = findUserById(followingUserId);
 		
+		System.out.println(followedUser.getFirstName());
 		followingUser.getFollowersName().add(followedUser.getFirstName());
 		followedUser.getFollowingsName().add(followingUser.getFirstName());
 		

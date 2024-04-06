@@ -7,7 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.ManyToMany;
 
 @Entity
 public class User {
@@ -21,7 +21,7 @@ public class User {
 	private String password;
 	private List<String> followersName = new ArrayList<>(); 
 	private List<String> followingsName = new ArrayList<>();
-	@OneToMany(mappedBy="Post")
+	@ManyToMany
 	private List<Post> savedPost = new ArrayList<>();
 
 	

@@ -26,7 +26,7 @@ public class PostServiceImpl implements PostService{
 		post.setUser(us.findUserById(userId));
 		postRepository.save(post);
 		
-		return null;
+		return post;
 	}
 
 	@Override
@@ -81,6 +81,7 @@ public class PostServiceImpl implements PostService{
 			user.getSavedPost().remove(post);
 		}else
 			user.getSavedPost().add(post);
+		
 		userRepository.save(user);
 		
 		return post;
