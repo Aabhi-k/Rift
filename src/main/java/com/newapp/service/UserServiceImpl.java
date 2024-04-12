@@ -48,12 +48,10 @@ public class UserServiceImpl implements UserService{
 		// TODO Auto-generated method stub
 		User followedUser = findUserById(followedUserId);
 		User followingUser = findUserById(followingUserId);
-		
-		System.out.println(followedUser.getFirstName());
 		followingUser.getFollowersName().add(followedUser.getFirstName());
 		followedUser.getFollowingsName().add(followingUser.getFirstName());
 		
-		System.out.println(followingUser.getFollowersName());
+
 		
 		userRepository.save(followingUser);
 		userRepository.save(followedUser);
