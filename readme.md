@@ -1,3 +1,14 @@
-# A social media site 
+<h1 align="center" id="title">My-Social</h1>
 
-a complete social media site with full functionality. created using spring boot and maven.
+<p id="description">A Complete Social Media site built using React and Spring boot built with a focus on speed and seamless user experience.</p>
+
+  
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+*   Chating
+*   Posting
+*   Feed and Discovery
+*   User Interaction
