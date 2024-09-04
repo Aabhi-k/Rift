@@ -1,4 +1,5 @@
-<h1 align="center" id="title">My-Social</h1>
+<h1 align="center" id="title">Rift
+</h1>
 
 <p id="description">A Complete Social Media site built using React and Spring boot built with a focus on speed and seamless user experience.</p>
 
